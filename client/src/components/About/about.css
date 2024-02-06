@@ -1,0 +1,39 @@
+/* ========= General ========= */
+.img-architecture {
+    text-align: left;
+}
+
+.img-architecture img {
+    width: 100%;
+    height: auto;
+  }
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 2rem 0;
+  }
+
+
+/* ========= MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    .about__container {
+        height: 68vh;
+    }
+    .img-architecture img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ========= MEDIA QUERIES (SMALL DEVICES) ========= */
+@media screen and (max-width: 600px) {
+    .about__container {
+        height: 100vh;
+    }
+    .img-architecture img {
+        width: 100%;
+        height: auto;
+    }
+}
