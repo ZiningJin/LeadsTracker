@@ -49,7 +49,7 @@ const Track = () => {
     };
 
     const handleTrackNow = (email) => {
-        const subject = '1688 Leads Tracking';
+        const subject = 'Leads Tracking';
         const body = `
         Please response the tracking progress of below leads:
         - id: ${email.id}
