@@ -11,7 +11,7 @@ The old vs new offline leads collect - upload - track workflow:
 ![workflow](https://github.com/ZiningJin/LeadsTracker/blob/main/flowchart.drawio.png)
 
 ## Tech Stack
-> Frontend: Reactjs
-> Backend: Flask, Flask-API, pymysql, SQLAlchemy, simple-salesforce
-> Database: MySQL
+> Frontend: React.js \
+> Backend: Flask, Flask-API, pymysql, SQLAlchemy, simple-salesforce \
+> Database: MySQL \
 > Test Tool: POSTMAN
