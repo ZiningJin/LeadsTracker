@@ -1,0 +1,91 @@
+#insert {
+    background-color: var(--color-bg-variant);
+    width: 100vw; /* Set width to 100 viewport width */
+    padding: 20px;
+}
+
+.insert__container-action {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.insert__container-action > form {
+    display: contents;
+  }
+
+.insert__container-action input,
+.insert__container-action select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.insert-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid var(--color-white);
+}
+
+.insert-table th,
+.insert-table td {
+    border: 1px solid, var(--color-primary);
+    border-width: 1px 0;
+    padding: 8px;
+}
+
+.insert-table th {
+    background-color: #f2f2f2;
+    border-width: 1px 0 2px;
+    font-weight: bold;
+  }
+
+.insert-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.insert-table th:first-child,
+.insert-table td:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.insert-table th:last-child,
+.insert-table td:last-child {
+  border-right: 1px solid #ddd;
+}
+
+/* ========= MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    .insert__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .insert-table {
+        width: 100%;
+        font-size: 14px;
+        table-layout: fixed;
+      }
+    .insert-table th,
+    .insert-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+/* ========= MEDIA QUERIES (SMALL DEVICES) ========= */
+@media screen and (max-width: 600px) {
+    .insert__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .insert-table {
+        width: 100%;
+        height: 100%;
+      }
+    .insert-table td {
+    word-wrap:break-word;
+    white-space: normal;
+    }
+}
