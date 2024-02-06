@@ -8,7 +8,7 @@ And the pain points for the responsible team would be:
 Thus this **LeadsTracker** Toolbox is designed to address the above pain points;
 
 The old vs new offline leads collect - upload - track workflow:
-[workflow](https://github.com/ZiningJin/LeadsTracker/blob/main/flowchart.drawio.png)
+![workflow](https://github.com/ZiningJin/LeadsTracker/blob/main/flowchart.drawio.png)
 
 ## Tech Stack
 > Frontend: Reactjs
