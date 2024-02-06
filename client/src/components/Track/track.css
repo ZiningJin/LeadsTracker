@@ -1,0 +1,174 @@
+.track__container {
+  margin-top: 10px;
+}
+
+.track-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid var(--color-white);
+}
+
+.track-table th,
+.track-table td {
+    border: 1px solid, var(--color-primary);
+    border-width: 1px 0;
+    padding: 8px;
+}
+
+.track-table th {
+    background-color: #f2f2f2;
+    border-width: 1px 0 2px;
+    font-weight: bold;
+  }
+
+.track-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.track-table th:first-child,
+.track-table td:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.track-table th:last-child,
+.track-table td:last-child {
+  border-right: 1px solid #ddd;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+/*form input[type="date"]*/
+form select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+}
+
+form input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+}
+
+
+/*
+form button[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--color-button);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+*/
+
+.salesforceData__container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-bg-variant);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+a.custom-link:link {
+  text-decoration: underline;
+  color: blue;
+}
+
+a.custom-link:visited {
+  text-decoration: underline;
+  color: red;
+}
+
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  margin: 2rem 0;
+}
+
+
+/* ========= MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+  .track__container {
+    height: 68vh;
+    overflow-y: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .form input[type="date"],
+  .form select,
+  .form button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .track-table {
+    width: 100%;
+    font-size: 14px;
+    table-layout: fixed;
+  }
+  .track-table th,
+  .track-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* ========= MEDIA QUERIES (SMALL DEVICES) ========= */
+@media screen and (max-width: 600px) {
+  .track__container {
+    height: 100vh;
+    overflow: scroll;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .form input[type="date"],
+  .form select,
+  .form button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .track-table {
+    width: 100%;
+    height: 100%;
+  }
+  .track-table td {
+    word-wrap:break-word;
+    white-space: normal;
+  }
+}
+
