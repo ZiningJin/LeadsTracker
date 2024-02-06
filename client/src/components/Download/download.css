@@ -1,0 +1,91 @@
+.download__container {
+    margin-top: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /*form input[type="date"]*/
+  form select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  form input[type="date"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  
+  a.custom-link:link {
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  a.custom-link:visited {
+    text-decoration: underline;
+    color: red;
+  }
+  
+  
+  /* ========= MEDIA QUERIES (MEDIUM DEVICES) ========== */
+  @media screen and (max-width: 1024px) {
+    .download__container {
+      height: 68vh;
+      overflow-y: auto;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .form input[type="date"],
+    .form select,
+    .form button {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* ========= MEDIA QUERIES (SMALL DEVICES) ========= */
+  @media screen and (max-width: 600px) {
+    .download__container {
+      height: 100vh;
+      overflow: scroll;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .form input[type="date"],
+    .form select,
+    .form button {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
