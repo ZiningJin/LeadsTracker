@@ -1,0 +1,59 @@
+footer {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    font-size: 0.9rem;
+    text-align: center;
+    background: var(--color-primary-variant);
+    margin-top: 7rem;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+.permalinks a {
+    color: var(--color-bg);
+}
+
+
+.footer__copyright {
+    margin-bottom: 4rem;
+    color: var(--color-bg);
+}
+
+.footer__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* =================== CTA ============= */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem; 
+    justify-content: center;   
+}
+
+.cta a {
+    color: var(--color-button);
+}
+
+
+/* ===MEDIA QUERIES (MEDIUM DEVICES) === */
+@media screen and (max-width: 1024px) {
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* ===MEDIA QUERIES (SMALL DEVICES) === */
+@media screen and (max-width: 600px) {
+
+}
